@@ -51,6 +51,7 @@ def exibir_menu():
     print("2. Listar Tarefas")
     print("3. Marcar Tarefa como Concluída")
     print("4. Remover Tarefa")
+    print("5.Mudar descrição de tarefa")
     print("0. Sair")
 
 def main():
@@ -82,6 +83,10 @@ def main():
                 remover_tarefa(lista_de_tarefas, indice)
             except ValueError:
                 print("\n❌ Entrada inválida. Por favor, digite um número.")
+
+        elif escolha == '5':
+            descricao = input("Altere a nova descricao")
+            adicionar_tarefa (descricao, tarefa)
         elif escolha == '0':
             print("\nObrigado por usar o Gerenciador de Tarefas. Até mais!")
             break
