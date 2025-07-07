@@ -43,6 +43,8 @@ def remover_tarefa(tarefas, indice):
         print(f"\n🗑️ Tarefa '{tarefa_removida['descricao']}' removida com sucesso!")
     else:
         print("\n❌ Índice inválido. Por favor, escolha um número da lista.")
+        
+def priorizar_tarefa(tarefas, indice):
 
 def exibir_menu():
     """Exibe o menu de opções para o usuário."""
@@ -83,10 +85,6 @@ def main():
                 remover_tarefa(lista_de_tarefas, indice)
             except ValueError:
                 print("\n❌ Entrada inválida. Por favor, digite um número.")
-
-        elif escolha == '5':
-            descricao = input("Altere a nova descricao")
-            adicionar_tarefa (descricao, tarefa)
         elif escolha == '0':
             print("\nObrigado por usar o Gerenciador de Tarefas. Até mais!")
             break
