@@ -47,6 +47,18 @@ def remover_tarefa(tarefas, indice):
 def priorizar_tarefa(tarefas, indice):
     indice_real = indice - 1
     if 0 <= indice_real < len(tarefas):
+        if tarefas[indice_real]["concluida"]
+            print(f"\n a tarefa {tarefas[indice_real]['descricao']} já estava priorizada")
+        else:
+            tarefas[indice_real]["concluida"] = True
+            opc = int(input("Digite 1 para baixa,2 para média e 3 para alta prioridade: "))
+            if opc == 1:
+                print(f"\n✅ Tarefa '{tarefas[indice_real]['descricao']}' está com baixa prioridade")
+            elif opc == 2:
+                print(f"\n✅ Tarefa '{tarefas[indice_real]['descricao']}' está com média prioridade")
+            elif opc == 3:
+                print(f"\n✅ Tarefa '{tarefas[indice_real]['descricao']}' está com alta prioridade")
+    else:
 
 def exibir_menu():
     """Exibe o menu de opções para o usuário."""
