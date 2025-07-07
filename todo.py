@@ -59,6 +59,16 @@ def priorizar_tarefa(tarefas, indice):
             elif opc == 3:
                 print(f"\n✅ Tarefa '{tarefas[indice_real]['descricao']}' está com alta prioridade")
     else:
+         print("Indice inválido, tente outro novamente")
+
+def alterar_descricao(tarefas, indice, nova_descricao):
+    indice_real = indice - 1
+    if 0 <= indice_real < len(tarefas)
+        descricao_antiga = tarefas[indice_real]["descricao"]
+        tarefas[indice_real]["descricao"] = nova_descricao
+        print(f"A descricao {descricao_antiga} alterada para {nova_descricao} com sucesso")
+    else:
+          print("\n Índice inválido. Por favor, escolha um número na lista.")
 
 def exibir_menu():
     """Exibe o menu de opções para o usuário."""
