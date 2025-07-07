@@ -45,6 +45,8 @@ def remover_tarefa(tarefas, indice):
         print("\n❌ Índice inválido. Por favor, escolha um número da lista.")
         
 def priorizar_tarefa(tarefas, indice):
+    indice_real = indice - 1
+    if 0 <= indice_real < len(tarefas):
 
 def exibir_menu():
     """Exibe o menu de opções para o usuário."""
