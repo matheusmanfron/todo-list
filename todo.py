@@ -110,6 +110,24 @@ def main():
                 remover_tarefa(lista_de_tarefas, indice)
             except ValueError:
                 print("\n❌ Entrada inválida. Por favor, digite um número.")
+
+        elif escolha == '5':
+            listar_tarefas(lista_de_tarefas)
+            try:
+                indice = int(input("Digite o numero da tarefa que deseja priorizar: "))
+                priorizar_tarefa(lista_de_tarefas, indice)
+            except ValueError:
+                print("Entrada não é válida, digite outro número: ")
+
+         elif escolha == '6':
+            listar_tarefas(lista_de_tarefas)
+            try:
+                indice = int(input("Digite o número da tarefa que deseja alterar: "))
+                nova_desc = input("Digite a nova descrição da tarefa: ")
+                alterar_descricao(lista_de_tarefas, indice, nova_desc)
+            except ValueError:
+                print("\n Entrada inválida. Por favor, digite um número.")
+        
         elif escolha == '0':
             print("\nObrigado por usar o Gerenciador de Tarefas. Até mais!")
             break
